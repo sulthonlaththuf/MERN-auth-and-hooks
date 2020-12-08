@@ -1,0 +1,32 @@
+GET http://localhost:1337/api/items
+
+###
+GET http://localhost:1337/api/items/5fcafc678280510d38ba04b0
+ 
+###
+POST http://localhost:1337/api/items/add
+Content-Type: application/json
+
+{
+  "item" : "Glass",
+  "price" : 2000,
+  "stock" : 200,
+  "description" : "Be careful it fragile like your own!",
+  "image" : "testing.jpg"
+}
+
+###
+POST http://localhost:1337/api/items/update/5fcafc678280510d38ba04b0
+Content-Type: application/json
+
+{
+  "item" : "Glass Pane",
+  "price" : 2000,
+  "stock" : 200,
+  "description" : "Be careful it fragile like your own!",
+  "image" : "testing.jpg"
+}
+
+###
+
+DELETE http://localhost:1337/api/items/5fcafc678280510d38ba04b0
